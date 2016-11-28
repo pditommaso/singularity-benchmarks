@@ -1,0 +1,160 @@
+Nov-24 17:26:13.138 [main] DEBUG nextflow.cli.Launcher - $> ./nextflow -c sing.config run rnatoy -revision peerj5515 -bg
+Nov-24 17:26:13.247 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 0.23.0-SNAPSHOT
+Nov-24 17:26:13.430 [main] DEBUG nextflow.scm.AssetManager - Listing projects in folder: /users/cn/ptommaso/.nextflow/assets
+Nov-24 17:26:13.750 [main] DEBUG nextflow.scm.AssetManager - Git config: /users/cn/ptommaso/.nextflow/assets/nextflow-io/rnatoy/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/rnatoy.git
+Nov-24 17:26:13.810 [main] DEBUG nextflow.scm.AssetManager - Git config: /users/cn/ptommaso/.nextflow/assets/nextflow-io/rnatoy/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/rnatoy.git
+Nov-24 17:26:14.457 [main] DEBUG nextflow.scm.AssetManager - Git config: /users/cn/ptommaso/.nextflow/assets/nextflow-io/rnatoy/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/rnatoy.git
+Nov-24 17:26:14.457 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow-io/rnatoy` [nauseous_hopper] - revision: eee880a2c5 [peerj5515]
+Nov-24 17:26:14.465 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /users/cn/ptommaso/.nextflow/assets/nextflow-io/rnatoy/nextflow.config
+Nov-24 17:26:14.468 [main] DEBUG nextflow.config.ConfigBuilder - User config file: sing.config
+Nov-24 17:26:14.470 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /users/cn/ptommaso/.nextflow/assets/nextflow-io/rnatoy/nextflow.config
+Nov-24 17:26:14.470 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /nfs/users2/cn/ptommaso/projects/singularity-runs/rnatoy/sing.config
+Nov-24 17:26:14.599 [main] DEBUG nextflow.config.ConfigBuilder - Setting config profile: 'standard'
+Nov-24 17:26:14.698 [main] DEBUG nextflow.Session - Session uuid: 043990a3-090f-4fc5-a8a8-ce81b7debbd2
+Nov-24 17:26:14.699 [main] DEBUG nextflow.Session - Run name: nauseous_hopper
+Nov-24 17:26:14.699 [main] DEBUG nextflow.Session - Executor pool size: 16
+Nov-24 17:26:14.999 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 0.23.0-SNAPSHOT build 4107
+  Modified: 24-11-2016 13:05 UTC (14:05 CEST)
+  System: Linux 2.6.32-504.23.4.el6.x86_64
+  Runtime: Groovy 2.4.7 on Java HotSpot(TM) 64-Bit Server VM 1.8.0_40-b26
+  Encoding: UTF-8 (UTF-8)
+  Process: 7798@ant-login9.linux.crg.es [172.17.16.33]
+  CPUs: 16 - Mem: 126 GB (2.3 GB) - Swap: 32 GB (31.7 GB)
+Nov-24 17:26:15.017 [main] DEBUG nextflow.Session - Work-dir: /users/cn/ptommaso/scratch [nfs]
+Nov-24 17:26:15.018 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /users/cn/ptommaso/.nextflow/assets/nextflow-io/rnatoy/bin
+Nov-24 17:26:15.147 [main] DEBUG nextflow.Session - Session start invoked
+Nov-24 17:26:15.151 [main] DEBUG nextflow.processor.TaskDispatcher - Dispatcher > start
+Nov-24 17:26:15.152 [main] DEBUG nextflow.trace.TraceFileObserver - Flow starting -- trace file: /nfs/users2/cn/ptommaso/projects/singularity-runs/rnatoy/trace.txt
+Nov-24 17:26:15.159 [main] DEBUG nextflow.script.ScriptRunner - > Script parsing
+Nov-24 17:26:15.372 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-24 17:26:15.376 [main] INFO  nextflow.Nextflow - R N A T O Y   P I P E L I N E    
+Nov-24 17:26:15.376 [main] INFO  nextflow.Nextflow - =================================
+Nov-24 17:26:15.376 [main] INFO  nextflow.Nextflow - genome             : data/mouse_genome_mm9.fa
+Nov-24 17:26:15.377 [main] INFO  nextflow.Nextflow - annotat            : data/mm65.long.ok.gtf
+Nov-24 17:26:15.377 [main] INFO  nextflow.Nextflow - pair1              : data/*_sub_1.fastq.gz
+Nov-24 17:26:15.377 [main] INFO  nextflow.Nextflow - pair2              : data/*_sub_2.fastq.gz
+Nov-24 17:26:15.395 [main] DEBUG nextflow.Channel - files for syntax: glob; folder: data/; pattern: *_sub_1.fastq.gz; options: null
+Nov-24 17:26:15.467 [main] DEBUG nextflow.Channel - files for syntax: glob; folder: data/; pattern: *_sub_2.fastq.gz; options: null
+Nov-24 17:26:15.509 [main] DEBUG nextflow.processor.ProcessFactory - Discovered executor class: nextflow.executor.IgExecutor
+Nov-24 17:26:15.570 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-24 17:26:15.571 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-24 17:26:15.580 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-24 17:26:15.582 [main] INFO  nextflow.executor.Executor - [warm up] executor > crg
+Nov-24 17:26:15.587 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'crg' > capacity: 100; pollInterval: 1s; dumpInterval: 5m 
+Nov-24 17:26:15.589 [main] DEBUG nextflow.processor.TaskDispatcher - Starting monitor: TaskPollingMonitor
+Nov-24 17:26:15.590 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: crg)
+Nov-24 17:26:15.591 [main] DEBUG nextflow.executor.Executor - Invoke register for executor: crg
+Nov-24 17:26:15.592 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-24 17:26:15.626 [main] DEBUG nextflow.Session - >>> barrier register (process: buildIndex)
+Nov-24 17:26:15.638 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > buildIndex -- maxForks: 16
+Nov-24 17:26:15.659 [Actor Thread 2] DEBUG nextflow.processor.TaskProcessor - <buildIndex> Poison pill arrived
+Nov-24 17:26:15.661 [Actor Thread 1] DEBUG nextflow.processor.StateObj - <buildIndex> State before poison: StateObj[submitted: 1; completed: 0; poisoned: false ]
+Nov-24 17:26:15.678 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-24 17:26:15.678 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-24 17:26:15.678 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-24 17:26:15.678 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-24 17:26:15.679 [main] DEBUG nextflow.Session - >>> barrier register (process: mapping)
+Nov-24 17:26:15.688 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > mapping -- maxForks: 16
+Nov-24 17:26:15.694 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-24 17:26:15.694 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-24 17:26:15.694 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-24 17:26:15.695 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-24 17:26:15.695 [main] DEBUG nextflow.Session - >>> barrier register (process: makeTranscript)
+Nov-24 17:26:15.702 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > makeTranscript -- maxForks: 16
+Nov-24 17:26:15.709 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Nov-24 17:26:15.709 [main] DEBUG nextflow.Session - Session await
+Nov-24 17:26:15.726 [Actor Thread 5] DEBUG nextflow.executor.GridTaskHandler - Launching process > buildIndex (mouse_genome_mm9) -- work folder: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde
+Nov-24 17:26:15.845 [Actor Thread 5] INFO  nextflow.Session - [39/d188d5] Submitted process > buildIndex (mouse_genome_mm9)
+Nov-24 17:26:15.853 [Actor Thread 2] DEBUG nextflow.processor.TaskProcessor - <buildIndex> After stop
+Nov-24 17:31:16.683 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 17:36:16.749 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 17:41:16.810 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 17:46:16.873 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 17:51:16.940 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 17:56:16.989 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:01:17.050 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:06:17.104 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:11:17.154 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:16:17.206 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:21:17.256 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:26:17.301 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:31:17.359 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:36:17.408 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:41:17.454 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:46:17.509 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13092426; id: 1; name: buildIndex (mouse_genome_mm9); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/39/d188d51adc7de74f49343285030cde started: 1480004806606; exited: -; ]
+Nov-24 18:50:48.552 [Thread-5] DEBUG nextflow.file.FileHelper - NFS path (true): /users/cn/ptommaso/scratch
+Nov-24 18:50:48.920 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - <buildIndex> Sending poison pills and terminating process
+Nov-24 18:50:48.924 [Actor Thread 1] DEBUG nextflow.Session - <<< barrier arrive (process: buildIndex)
+Nov-24 18:50:48.925 [Actor Thread 6] DEBUG nextflow.processor.TaskProcessor - <mapping> Poison pill arrived
+Nov-24 18:50:48.926 [Actor Thread 7] DEBUG nextflow.processor.StateObj - <mapping> State before poison: StateObj[submitted: 4; completed: 0; poisoned: false ]
+Nov-24 18:50:48.966 [Actor Thread 11] DEBUG nextflow.executor.GridTaskHandler - Launching process > mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1) -- work folder: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90
+Nov-24 18:50:48.968 [Actor Thread 11] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 18:50:49.022 [Actor Thread 11] INFO  nextflow.Session - [9a/4617d1] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1)
+Nov-24 18:50:49.075 [Actor Thread 2] DEBUG nextflow.executor.GridTaskHandler - Launching process > mapping (wgEncodeCshlLongRnaSeqCnsE18Rep2) -- work folder: /users/cn/ptommaso/scratch/a7/ee81d299d9491cc10ba454bd0ded2f
+Nov-24 18:50:49.078 [Actor Thread 2] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 18:50:49.141 [Actor Thread 2] INFO  nextflow.Session - [a7/ee81d2] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE18Rep2)
+Nov-24 18:50:49.141 [Actor Thread 10] DEBUG nextflow.executor.GridTaskHandler - Launching process > mapping (wgEncodeCshlLongRnaSeqCnsE14Rep1) -- work folder: /users/cn/ptommaso/scratch/da/38e5e65c7b938a475cadc7a373d60a
+Nov-24 18:50:49.145 [Actor Thread 10] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 18:50:49.205 [Actor Thread 10] INFO  nextflow.Session - [da/38e5e6] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE14Rep1)
+Nov-24 18:50:49.205 [Actor Thread 9] DEBUG nextflow.executor.GridTaskHandler - Launching process > mapping (wgEncodeCshlLongRnaSeqCnsE14Rep2) -- work folder: /users/cn/ptommaso/scratch/f0/1565d1c25d2b48b2f9bf6a914a00a8
+Nov-24 18:50:49.208 [Actor Thread 9] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 18:50:49.270 [Actor Thread 9] INFO  nextflow.Session - [f0/1565d1] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE14Rep2)
+Nov-24 18:50:49.272 [Actor Thread 6] DEBUG nextflow.processor.TaskProcessor - <mapping> After stop
+Nov-24 18:51:17.557 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: SUBMITTED; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: -; exited: -; ]
+Nov-24 18:56:17.609 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:01:17.651 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:06:17.704 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:11:17.751 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:16:17.810 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:21:17.857 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:26:17.916 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:31:17.962 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:36:18.007 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:41:18.048 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:46:18.094 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:51:18.148 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 19:56:18.198 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:01:18.238 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:06:18.287 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:11:18.342 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:16:18.395 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:21:18.450 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:26:18.501 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:31:18.545 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:36:18.598 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:41:18.638 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:46:18.684 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:51:18.748 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:56:18.797 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103480; id: 5; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/9a/4617d146af261abbdf8a4e98c50b90 started: 1480009877559; exited: -; ]
+Nov-24 20:57:48.946 [Actor Thread 13] DEBUG nextflow.executor.GridTaskHandler - Launching process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE18Rep1) -- work folder: /users/cn/ptommaso/scratch/21/84c5cab797db06b5d85be5de982028
+Nov-24 20:57:48.949 [Actor Thread 13] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 20:57:49.011 [Actor Thread 13] INFO  nextflow.Session - [21/84c5ca] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE18Rep1)
+Nov-24 21:01:18.839 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 4 -- first: TaskHandler[jobId: 13103481; id: 2; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep2); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/a7/ee81d299d9491cc10ba454bd0ded2f started: 1480009879561; exited: -; ]
+Nov-24 21:04:50.945 [Actor Thread 17] DEBUG nextflow.executor.GridTaskHandler - Launching process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep1) -- work folder: /users/cn/ptommaso/scratch/55/1e22b8112b8c63639de6c644f08fd4
+Nov-24 21:04:50.948 [Actor Thread 17] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 21:04:51.009 [Actor Thread 17] INFO  nextflow.Session - [55/1e22b8] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep1)
+Nov-24 21:06:18.879 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 3 -- first: TaskHandler[jobId: 13103481; id: 2; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep2); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/a7/ee81d299d9491cc10ba454bd0ded2f started: 1480009879561; exited: -; ]
+Nov-24 21:11:18.934 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 2 -- first: TaskHandler[jobId: 13103481; id: 2; name: mapping (wgEncodeCshlLongRnaSeqCnsE18Rep2); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/a7/ee81d299d9491cc10ba454bd0ded2f started: 1480009879561; exited: -; ]
+Nov-24 21:12:19.978 [Actor Thread 20] DEBUG nextflow.executor.GridTaskHandler - Launching process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE18Rep2) -- work folder: /users/cn/ptommaso/scratch/b6/557efbbf7a5c2ae30e0405201a1ba4
+Nov-24 21:12:19.981 [Actor Thread 20] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 21:12:20.048 [Actor Thread 20] INFO  nextflow.Session - [b6/557efb] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE18Rep2)
+Nov-24 21:16:18.990 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 2 -- first: TaskHandler[jobId: 13103483; id: 3; name: mapping (wgEncodeCshlLongRnaSeqCnsE14Rep2); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/f0/1565d1c25d2b48b2f9bf6a914a00a8 started: 1480009879567; exited: -; ]
+Nov-24 21:21:19.033 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13103483; id: 3; name: mapping (wgEncodeCshlLongRnaSeqCnsE14Rep2); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/f0/1565d1c25d2b48b2f9bf6a914a00a8 started: 1480009879567; exited: -; ]
+Nov-24 21:25:52.077 [Actor Thread 21] DEBUG nextflow.processor.TaskProcessor - <mapping> Sending poison pills and terminating process
+Nov-24 21:25:52.078 [Actor Thread 21] DEBUG nextflow.Session - <<< barrier arrive (process: mapping)
+Nov-24 21:25:52.079 [Actor Thread 20] DEBUG nextflow.processor.TaskProcessor - <makeTranscript> Poison pill arrived
+Nov-24 21:25:52.079 [Actor Thread 21] DEBUG nextflow.processor.StateObj - <makeTranscript> State before poison: StateObj[submitted: 4; completed: 3; poisoned: false ]
+Nov-24 21:25:52.107 [Actor Thread 24] DEBUG nextflow.executor.GridTaskHandler - Launching process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep2) -- work folder: /users/cn/ptommaso/scratch/4d/340bf6b8eb0bde939c2a22195d79ff
+Nov-24 21:25:52.109 [Actor Thread 24] DEBUG nextflow.executor.CrgExecutor - Parallel environment not specified -- Using default value: `smp`
+Nov-24 21:25:52.182 [Actor Thread 24] INFO  nextflow.Session - [4d/340bf6] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep2)
+Nov-24 21:25:52.184 [Actor Thread 20] DEBUG nextflow.processor.TaskProcessor - <makeTranscript> After stop
+Nov-24 21:26:19.075 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13134262; id: 9; name: makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep2); status: SUBMITTED; exit: -; workDir: /users/cn/ptommaso/scratch/4d/340bf6b8eb0bde939c2a22195d79ff started: -; exited: -; ]
+Nov-24 21:31:19.138 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13134262; id: 9; name: makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep2); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/4d/340bf6b8eb0bde939c2a22195d79ff started: 1480019179076; exited: -; ]
+Nov-24 21:31:49.149 [Actor Thread 22] DEBUG nextflow.processor.TaskProcessor - <makeTranscript> Sending poison pills and terminating process
+Nov-24 21:31:49.150 [Actor Thread 22] DEBUG nextflow.Session - <<< barrier arrive (process: makeTranscript)
+Nov-24 21:31:49.150 [main] DEBUG nextflow.Session - Session await > all process finished
+Nov-24 21:31:49.151 [Thread-5] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: crg)
+Nov-24 21:31:49.152 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-24 21:31:50.125 [main] DEBUG nextflow.trace.TraceFileObserver - Flow completing -- flushing trace file
+Nov-24 21:31:50.226 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

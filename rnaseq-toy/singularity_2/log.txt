@@ -1,0 +1,22 @@
+N E X T F L O W  ~  version 0.23.0-SNAPSHOT
+Launching `nextflow-io/rnatoy` [stoic_booth] - revision: eee880a2c5 [peerj5515]
+R N A T O Y   P I P E L I N E    
+=================================
+genome             : data/mouse_genome_mm9.fa
+annotat            : data/mm65.long.ok.gtf
+pair1              : data/*_sub_1.fastq.gz
+pair2              : data/*_sub_2.fastq.gz
+[warm up] executor > crg
+[bf/8ff1b0] Submitted process > buildIndex (mouse_genome_mm9)
+[99/ec4679] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE14Rep1)
+[e1/8c6b79] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE14Rep2)
+[f5/b5ad14] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE18Rep1)
+[6e/848fe2] Submitted process > mapping (wgEncodeCshlLongRnaSeqCnsE18Rep2)
+[46/ec45f5] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE18Rep1)
+Saving: transcript_wgEncodeCshlLongRnaSeqCnsE18Rep1.gtf
+[e6/dfa926] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep1)
+Saving: transcript_wgEncodeCshlLongRnaSeqCnsE14Rep1.gtf
+[17/c08f7b] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE18Rep2)
+Saving: transcript_wgEncodeCshlLongRnaSeqCnsE18Rep2.gtf
+[47/baa9ff] Submitted process > makeTranscript (wgEncodeCshlLongRnaSeqCnsE14Rep2)
+Saving: transcript_wgEncodeCshlLongRnaSeqCnsE14Rep2.gtf
