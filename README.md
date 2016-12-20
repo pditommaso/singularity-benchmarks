@@ -1,12 +1,10 @@
-Singularity Benchmarks 
------------------------
+# Singularity Benchmarks 
 
 This repository contains the scripts to produce than benchmark table 
 comparing Singularity vs Docker performance published at 
 [this link](https://www.nextflow.io/blog/2016/more-fun-containers-hpc.html).
 
-Quick start 
-------------
+## Quick start 
 
 To reproduce the table from raw data clone this repository:
 
@@ -25,8 +23,7 @@ the required dependencies: R, Datamash, Make and Groovy. See the included
 [Dockefile](https://raw.githubusercontent.com/cbcrg/docker-benchmarks/master/Dockerfile) for configuration details).
 
 
-Related links 
--------------
+## Related links 
 
 * https://peerj.com/articles/1273/
 * https://github.com/cbcrg/docker-benchmarks 
