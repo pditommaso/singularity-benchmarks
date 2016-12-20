@@ -1,0 +1,240 @@
+N E X T F L O W  ~  version 0.23.0-SNAPSHOT
+Launching `piper/piper.nf` [dreamy_mclean] - revision: 3773b82b50
+Using genomes-db path: /nfs/users2/cn/ptommaso/projects/singularity-runs/piper-nf/db
+P I P E R - RNA mapping pipeline - ver 1.4.2
+============================================
+query               : /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/query100.fa
+genomes-db          : /nfs/users2/cn/ptommaso/projects/singularity-runs/piper-nf/db
+query-chunk-size    : 1000
+genomes-file        : -
+genomes-list        : /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Anas_platyrhynchos.BGI_duck_1.0.73.dna_sm.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Anolis_carolinensis.AnoCar2.0.73.dna_sm.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Chrysemys_picta_bellii.ChrPicBel3.0.1.dna_rm.toplevel.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Ficedula_albicollis.FicAlb_1.4.73.dna_sm.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Gallus_gallus.Galgal4.73.dna_sm.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Meleagris_gallopavo.UMD2.73.dna_sm.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/melobsittacus_undulatus_sm.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Pelodiscus_sinensis.PelSin_1.0.73.dna_sm.fa,/users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Taeniopygia_guttata.taeGut3.2.4.73.dna_sm.fa
+genomes-folder      : /nfs/users2/cn/ptommaso/projects/singularity-runs/piper-nf/piper/tutorial/genomes/
+result-dir          : result
+blast-strategy      : ncbi-blast
+align-strategy      : slow_pair
+exonerate-success:  : 1
+exonerate-mode:     : 1000
+exonerate-chunk-size: 2500
+repeat-cov          : 20
+
+
+Validating genome: gen1 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Anas_platyrhynchos.BGI_duck_1.0.73.dna_sm.fa
+Validating genome: gen2 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Anolis_carolinensis.AnoCar2.0.73.dna_sm.fa
+Validating genome: gen3 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Chrysemys_picta_bellii.ChrPicBel3.0.1.dna_rm.toplevel.fa
+Validating genome: gen4 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Ficedula_albicollis.FicAlb_1.4.73.dna_sm.fa
+Validating genome: gen5 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Gallus_gallus.Galgal4.73.dna_sm.fa
+Validating genome: gen6 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Meleagris_gallopavo.UMD2.73.dna_sm.fa
+Validating genome: gen7 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/melobsittacus_undulatus_sm.fa
+Validating genome: gen8 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Pelodiscus_sinensis.PelSin_1.0.73.dna_sm.fa
+Validating genome: gen9 -- file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/genomes/Taeniopygia_guttata.taeGut3.2.4.73.dna_sm.fa
+Splitting query file: /users/cn/ptommaso/projects/singularity-runs/piper-nf/data/query100.fa ..
+Created 1 input chunks to path: /users/cn/ptommaso/scratch/57/d230817b317dce6d316f27aff9b552
+[warm up] executor > crg
+WARN: Process 'normExonerate' cannot be executed by 'crg' executor -- Using 'local' executor instead
+[warm up] executor > local
+[88/eb0993] Submitted process > formatChr (3)
+[95/1e0c2d] Submitted process > formatChr (6)
+[4b/abc5c2] Submitted process > formatChr (4)
+[3e/bbf217] Submitted process > formatChr (2)
+[31/1e568b] Submitted process > formatChr (1)
+[3f/9a093f] Submitted process > formatChr (8)
+[04/84c3f6] Submitted process > formatChr (7)
+[a8/b3cbe9] Submitted process > formatChr (5)
+[31/6f08c7] Submitted process > formatChr (9)
+[ba/5c9b2e] Submitted process > formatBlast (5)
+[78/25101f] Submitted process > formatBlast (4)
+[6c/54758d] Submitted process > formatBlast (2)
+[29/8e5304] Submitted process > formatBlast (8)
+[d8/83f543] Submitted process > formatBlast (1)
+[bd/a7967d] Submitted process > formatBlast (6)
+[03/c0d4ba] Submitted process > formatBlast (9)
+[db/786b0a] Submitted process > formatBlast (7)
+[9d/2012e8] Submitted process > formatBlast (3)
+[f7/22abd8] Submitted process > blast (2)
+[2a/b0ce92] Submitted process > blast (1)
+[4b/ba6c5e] Submitted process > blast (3)
+[5c/179861] Submitted process > blast (4)
+[3d/44e90e] Submitted process > blast (5)
+[64/ecd53d] Submitted process > blast (6)
+[0e/75a1ea] Submitted process > blast (7)
+[db/f8e942] Submitted process > exonerate (1)
+[bf/6e72c5] Submitted process > exonerate (4)
+[7b/2d8b8b] Submitted process > exonerate (3)
+[7f/e86622] Submitted process > exonerate (2)
+[64/5fa5ca] Submitted process > blast (8)
+[29/a83235] Submitted process > blast (9)
+[4d/2b42ab] Submitted process > normExonerate (1)
+[5e/4eb824] Submitted process > exonerate (5)
+[b2/2efae6] Submitted process > exonerate (6)
+[37/8afd55] Submitted process > exonerate (7)
+[4c/7cee73] Submitted process > exonerate (9)
+[45/252afe] Submitted process > exonerate (8)
+[6f/6f8212] Submitted process > normExonerate (2)
+[e3/f62ce9] Submitted process > exonerate (10)
+[92/5706ea] Submitted process > normExonerate (3)
+[29/5ae89a] Submitted process > normExonerate (4)
+[b2/92210d] Submitted process > normExonerate (5)
+[7e/a8c879] Submitted process > normExonerate (6)
+[a5/7f1e8b] Submitted process > normExonerate (7)
+[ec/3a71c0] Submitted process > normExonerate (8)
+[7c/3b38f4] Submitted process > normExonerate (9)
+[77/e29a6f] Submitted process > normExonerate (10)
+[48/d3c2e9] Submitted process > exonerate (11)
+[93/7a4b95] Submitted process > exonerate (12)
+[75/1daab3] Submitted process > normExonerate (11)
+[0d/91bf9e] Submitted process > normExonerate (12)
+[68/ab5442] Submitted process > similarity (14)
+[b9/97a1b0] Submitted process > similarity (16)
+[b4/a58334] Submitted process > similarity (8)
+[18/d54cd9] Submitted process > similarity (4)
+[7d/e071f1] Submitted process > similarity (15)
+[5c/e5f393] Submitted process > similarity (3)
+[f8/87173a] Submitted process > similarity (9)
+[e3/64f7e0] Submitted process > similarity (5)
+[93/7eba9d] Submitted process > similarity (2)
+[96/8ba67d] Submitted process > similarity (11)
+[c0/c307a8] Submitted process > similarity (7)
+[0f/c96c57] Submitted process > similarity (10)
+[c0/0acc9e] Submitted process > similarity (1)
+[45/e7f839] Submitted process > similarity (12)
+[20/ff2088] Submitted process > similarity (6)
+[c3/77a414] Submitted process > similarity (13)
+[7b/32b9d1] Submitted process > similarity (17)
+[80/b8cf25] Submitted process > similarity (18)
+[f8/71e98b] Submitted process > similarity (19)
+[6d/eae3f1] Submitted process > similarity (20)
+[e2/1aae61] Submitted process > similarity (21)
+[41/4b9696] Submitted process > similarity (22)
+[4a/59a617] Submitted process > similarity (23)
+[0b/3157bd] Submitted process > similarity (24)
+[0b/1ca542] Submitted process > similarity (25)
+[16/024f1c] Submitted process > similarity (26)
+[76/37aabb] Submitted process > similarity (27)
+[50/859552] Submitted process > similarity (28)
+[25/04b592] Submitted process > similarity (29)
+[5f/98a829] Submitted process > similarity (30)
+[f8/dfc069] Submitted process > similarity (31)
+[61/abb09c] Submitted process > similarity (32)
+[aa/a41b18] Submitted process > similarity (33)
+[1e/e56a1e] Submitted process > similarity (34)
+[9f/d19451] Submitted process > similarity (35)
+[8f/08f005] Submitted process > similarity (36)
+[a6/3f5860] Submitted process > similarity (37)
+[5f/aacf20] Submitted process > similarity (38)
+[26/2cef28] Submitted process > similarity (39)
+[26/3adb34] Submitted process > similarity (40)
+[95/9b9751] Submitted process > similarity (41)
+[06/91dcec] Submitted process > similarity (42)
+[90/abdcfb] Submitted process > similarity (43)
+[1c/b503e2] Submitted process > similarity (44)
+[8d/58f04e] Submitted process > similarity (45)
+[89/d53e5c] Submitted process > similarity (46)
+[c4/7d3ad9] Submitted process > matrix (1)
+
+====== Pipe-R sim matrix =======
+species,gen1,gen2,gen3,gen4,gen5,gen6,gen7,gen8,gen9
+CUFF.102.1,78.76,0,0,0,100.00,89.68,75.75,0,0
+CUFF.58891.1,0,0,0,0,100.00,89.83,0,0,0
+CUFF.13755.2,0,0,0,77.54,58.03,0,0,0,80.14
+CUFF.94004.1,0,0,0,0,100.00,0,0,0,0
+CUFF.101790.1,0,0,0,0,100.00,0,80.19,0,0
+CUFF.61358.1,0,0,0,0,68.07,0,0,0,0
+CUFF.134186.2,0,0,0,0,100.00,0,0,0,0
+CUFF.56802.2,0,0,0,0,98.95,89.43,0,0,0
+CUFF.8501.3,0,0,0,0,100.00,92.58,0,0,0
+CUFF.132887.3,0,0,0,0,100.00,95.44,0,0,92.42
+CUFF.42845.2,91.27,0,79.25,0,99.97,96.72,86.67,76.79,0
+CUFF.32777.3,0,0,0,0,99.98,0,0,0,0
+CUFF.94730.1,0,0,0,0,100.00,92.42,0,0,0
+CUFF.88621.1,80.22,0,0,0,100.00,92.10,77.95,0,0
+CUFF.87653.2,80.91,0,0,0,100.00,0,73.88,0,0
+CUFF.27382.4,0,0,0,0,100.00,0,0,0,0
+CUFF.136398.2,0,0,0,0,100.00,0,0,0,0
+CUFF.115238.2,79.81,0,0,74.39,100.00,91.48,0,0,0
+CUFF.146412.1,0,0,0,0,100.00,90.62,0,0,0
+CUFF.142223.2,0,0,0,0,100.00,0,0,0,0
+CUFF.116758.2,74.54,0,0,0,100.00,91.28,0,0,0
+CUFF.85960.1,0,0,0,0,100.00,91.26,0,0,0
+CUFF.75286.1,0,0,0,0,99.86,93.87,0,0,0
+CUFF.96472.3,0,0,0,0,99.84,91.89,0,0,0
+CUFF.115782.2,0,0,0,0,99.18,90.15,0,0,77.90
+CUFF.57194.1,0,0,0,0,99.84,0,0,0,0
+CUFF.71472.2,0,0,0,69.07,100.00,93.24,0,0,0
+CUFF.74717.1,0,0,0,0,100.00,0,0,0,0
+CUFF.136076.4,0,0,0,0,0,82.41,0,0,0
+CUFF.126783.5,0,0,0,0,100.00,90.98,0,0,0
+CUFF.128925.1,94.39,0,0,90.72,97.14,93.28,86.42,87.57,89.85
+CUFF.28328.3,0,0,0,0,100.00,89.73,0,0,0
+CUFF.134439.18,0,0,0,0,100.00,0,0,0,0
+CUFF.9801.1,85.58,0,0,0,100.00,0,0,0,0
+CUFF.61059.1,0,0,0,0,100.00,0,0,0,0
+CUFF.136709.2,0,0,0,0,99.79,92.57,0,0,0
+CUFF.6498.2,0,0,0,0,100.00,0,81.50,0,0
+CUFF.101994.1,0,0,0,0,99.47,0,0,0,0
+CUFF.93615.1,0,0,0,0,100.00,91.63,0,0,0
+CUFF.9164.2,0,0,0,0,100.00,0,0,0,0
+CUFF.118232.3,0,0,0,0,100.00,0,0,0,0
+CUFF.59977.12,0,0,0,0,100.00,89.42,0,0,0
+CUFF.84475.3,0,0,0,0,100.00,0,0,0,0
+CUFF.77894.3,0,0,0,76.11,100.00,92.04,0,0,74.71
+CUFF.136404.9,0,0,0,0,99.95,0,0,0,0
+CUFF.129626.3,0,0,0,0,100.00,0,0,0,0
+CUFF.134325.13,0,0,0,0,0,0,0,0,0
+CUFF.97297.3,0,0,0,0,0,0,0,0,0
+CUFF.136141.1,0,0,0,0,0,0,0,0,0
+CUFF.133681.2,0,0,0,0,0,0,0,0,0
+CUFF.135245.1,0,0,0,0,0,0,0,0,0
+CUFF.65550.2,0,0,0,0,0,0,0,0,0
+CUFF.134757.11,0,0,0,0,0,0,0,0,0
+CUFF.138219.10,0,0,0,0,0,0,0,0,0
+CUFF.133652.2,0,0,0,0,0,0,0,0,0
+CUFF.131239.6,0,0,0,0,0,0,0,0,0
+CUFF.87653.4,0,0,0,0,0,0,0,0,0
+CUFF.4543.4,0,0,0,0,0,0,0,0,0
+CUFF.99724.4,0,0,0,0,0,0,0,0,0
+CUFF.4769.1,0,0,0,0,0,0,0,0,0
+CUFF.135028.4,0,0,0,0,0,0,0,0,0
+CUFF.80492.2,0,0,0,0,0,0,0,0,0
+CUFF.8997.5,0,0,0,0,0,0,0,0,0
+CUFF.134434.3,0,0,0,0,0,0,0,0,0
+CUFF.134129.2,0,0,0,0,0,0,0,0,0
+CUFF.133918.14,0,0,0,0,0,0,0,0,0
+CUFF.135846.18,0,0,0,0,0,0,0,0,0
+CUFF.136444.9,0,0,0,0,0,0,0,0,0
+CUFF.139010.2,0,0,0,0,0,0,0,0,0
+CUFF.100862.2,0,0,0,0,0,0,0,0,0
+CUFF.138029.20,0,0,0,0,0,0,0,0,0
+CUFF.136598.11,0,0,0,0,0,0,0,0,0
+CUFF.136152.3,0,0,0,0,0,0,0,0,0
+CUFF.81515.1,0,0,0,0,0,0,0,0,0
+CUFF.136249.1,0,0,0,0,0,0,0,0,0
+CUFF.135028.2,0,0,0,0,0,0,0,0,0
+CUFF.105879.4,0,0,0,0,0,0,0,0,0
+CUFF.136088.27,0,0,0,0,0,0,0,0,0
+CUFF.110871.1,0,0,0,0,0,0,0,0,0
+CUFF.29702.1,0,0,0,0,0,0,0,0,0
+CUFF.22618.3,0,0,0,0,0,0,0,0,0
+CUFF.133314.2,0,0,0,0,0,0,0,0,0
+CUFF.53356.1,0,0,0,0,0,0,0,0,0
+CUFF.131156.6,0,0,0,0,0,0,0,0,0
+CUFF.137452.5,0,0,0,0,0,0,0,0,0
+CUFF.130731.4,0,0,0,0,0,0,0,0,0
+CUFF.137974.6,0,0,0,0,0,0,0,0,0
+CUFF.132201.1,0,0,0,0,0,0,0,0,0
+CUFF.78783.3,0,0,0,0,0,0,0,0,0
+CUFF.131175.2,0,0,0,0,0,0,0,0,0
+CUFF.133918.13,0,0,0,0,0,0,0,0,0
+CUFF.134701.1,0,0,0,0,0,0,0,0,0
+CUFF.137696.7,0,0,0,0,0,0,0,0,0
+CUFF.132016.3,0,0,0,0,0,0,0,0,0
+CUFF.68537.1,0,0,0,0,0,0,0,0,0
+CUFF.138101.3,0,0,0,0,0,0,0,0,0
+CUFF.133853.4,0,0,0,0,0,0,0,0,0
+CUFF.130784.1,0,0,0,0,0,0,0,0,0
+CUFF.131956.2,0,0,0,0,0,0,0,0,0
+CUFF.138245.15,0,0,0,0,0,0,0,0,0
+
+
+
+Saving similarity matrix to file:
+> /nfs/users2/cn/ptommaso/projects/singularity-runs/piper-nf/result/simMatrix.csv

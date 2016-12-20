@@ -1,0 +1,83 @@
+N E X T F L O W  ~  version 0.23.0-SNAPSHOT
+Launching `nextflow-io/nmdp-flow` [stupefied_almeida] - revision: 85c3ce81df [peerj5515]
+[warm up] executor > crg
+[6d/b15a11] Submitted process > interleave (1)
+[21/6f699e] Submitted process > fastqToSsake (4)
+[a8/9c8962] Submitted process > fastqToSsake (5)
+[0e/67d2b4] Submitted process > interleave (5)
+[f1/c5a298] Submitted process > fastqToSsake (8)
+[43/b353ff] Submitted process > fastqToSsake (6)
+[08/7aa115] Submitted process > fastqToSsake (1)
+[96/3b0fe2] Submitted process > fastqToSsake (3)
+[c2/34cb10] Submitted process > fastqToSsake (7)
+[68/f5cf96] Submitted process > fastqToSsake (2)
+[80/e2ec9a] Submitted process > interleave (2)
+[2e/f073c6] Submitted process > interleave (6)
+[1d/fe998b] Submitted process > interleave (3)
+[bf/e44323] Submitted process > interleave (4)
+[41/202e17] Submitted process > interleave (7)
+[51/b037fa] Submitted process > interleave (8)
+[98/d3af5f] Submitted process > alignReads (1)
+[da/71091a] Submitted process > reformat (1)
+[a1/b24b61] Submitted process > reformat (2)
+[49/8608e2] Submitted process > alignReads (2)
+[17/7e7b5b] Submitted process > reformat (3)
+[18/2e2236] Submitted process > reformat (4)
+[7d/4cc3e2] Submitted process > reformat (5)
+[61/bbbab2] Submitted process > reformat (6)
+[de/3418be] Submitted process > reformat (7)
+[57/93c6ca] Submitted process > reformat (8)
+[49/a1d9e9] Submitted process > alignReads (3)
+[75/f437e5] Submitted process > alignReads (4)
+[fe/589768] Submitted process > alignReads (5)
+[a5/7570be] Submitted process > alignReads (6)
+[66/46fee9] Submitted process > alignReads (7)
+reads vcf [hla_sample_2, /users/cn/ptommaso/scratch/98/d3af5f7c0184d0b585ed81c3824baa/hla_sample_2.reads.bwa.sorted.vcf.gz]
+aligned reads [hla_sample_2, /users/cn/ptommaso/scratch/98/d3af5f7c0184d0b585ed81c3824baa/hla_sample_2.reads.bwa.sorted.bam]
+[85/b7a03f] Submitted process > alignReads (8)
+[62/d546a2] Submitted process > ssake (1)
+[08/e6c478] Submitted process > ssake (2)
+aligned reads [hla_sample_1, /users/cn/ptommaso/scratch/49/8608e283ab2afd74d96f9fef54ecce/hla_sample_1.reads.bwa.sorted.bam]
+reads vcf [hla_sample_1, /users/cn/ptommaso/scratch/49/8608e283ab2afd74d96f9fef54ecce/hla_sample_1.reads.bwa.sorted.vcf.gz]
+[70/79d83e] Submitted process > ssake (3)
+[05/bbd0cb] Submitted process > ssake (4)
+[54/2b23ec] Submitted process > ssake (5)
+aligned reads [hla_sample_5, /users/cn/ptommaso/scratch/49/a1d9e9e982a31beec274a3d80e110d/hla_sample_5.reads.bwa.sorted.bam]
+reads vcf [hla_sample_5, /users/cn/ptommaso/scratch/49/a1d9e9e982a31beec274a3d80e110d/hla_sample_5.reads.bwa.sorted.vcf.gz]
+[30/e5eff0] Submitted process > ssake (6)
+[55/537b67] Submitted process > ssake (7)
+[35/9f858a] Submitted process > ssake (8)
+aligned reads [hla_sample_3, /users/cn/ptommaso/scratch/75/f437e5e693abf6c1051c190251726a/hla_sample_3.reads.bwa.sorted.bam]
+reads vcf [hla_sample_3, /users/cn/ptommaso/scratch/75/f437e5e693abf6c1051c190251726a/hla_sample_3.reads.bwa.sorted.vcf.gz]
+aligned reads [hla_sample_6, /users/cn/ptommaso/scratch/fe/5897684e3a2c3b038eab31f14f559e/hla_sample_6.reads.bwa.sorted.bam]
+reads vcf [hla_sample_6, /users/cn/ptommaso/scratch/fe/5897684e3a2c3b038eab31f14f559e/hla_sample_6.reads.bwa.sorted.vcf.gz]
+aligned reads [hla_sample_7, /users/cn/ptommaso/scratch/a5/7570be0264ea7842d34e6664f4fdf3/hla_sample_7.reads.bwa.sorted.bam]
+reads vcf [hla_sample_7, /users/cn/ptommaso/scratch/a5/7570be0264ea7842d34e6664f4fdf3/hla_sample_7.reads.bwa.sorted.vcf.gz]
+reads vcf [hla_sample_8, /users/cn/ptommaso/scratch/66/46fee9e41dae005a726f84f75bf81c/hla_sample_8.reads.bwa.sorted.vcf.gz]
+aligned reads [hla_sample_8, /users/cn/ptommaso/scratch/66/46fee9e41dae005a726f84f75bf81c/hla_sample_8.reads.bwa.sorted.bam]
+aligned reads [hla_sample_4, /users/cn/ptommaso/scratch/85/b7a03f7143e543eaf29462f996b3a0/hla_sample_4.reads.bwa.sorted.bam]
+reads vcf [hla_sample_4, /users/cn/ptommaso/scratch/85/b7a03f7143e543eaf29462f996b3a0/hla_sample_4.reads.bwa.sorted.vcf.gz]
+[26/45606b] Submitted process > alignContigs (1)
+aligned contigs [hla_sample_4, /users/cn/ptommaso/scratch/26/45606b4a5efaac8f5e7469b2524ca1/hla_sample_4.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_4, /users/cn/ptommaso/scratch/26/45606b4a5efaac8f5e7469b2524ca1/hla_sample_4.contigs.bwa.sorted.vcf.gz]
+[87/c52847] Submitted process > alignContigs (2)
+aligned contigs [hla_sample_1, /users/cn/ptommaso/scratch/87/c52847a4ff342765758b415b6254e2/hla_sample_1.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_1, /users/cn/ptommaso/scratch/87/c52847a4ff342765758b415b6254e2/hla_sample_1.contigs.bwa.sorted.vcf.gz]
+[9c/a5cfc2] Submitted process > alignContigs (3)
+aligned contigs [hla_sample_5, /users/cn/ptommaso/scratch/9c/a5cfc25071d0b33b639a6ed62771a8/hla_sample_5.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_5, /users/cn/ptommaso/scratch/9c/a5cfc25071d0b33b639a6ed62771a8/hla_sample_5.contigs.bwa.sorted.vcf.gz]
+[90/d6eb37] Submitted process > alignContigs (4)
+aligned contigs [hla_sample_7, /users/cn/ptommaso/scratch/90/d6eb37966fe5f92588b51d6fb5079d/hla_sample_7.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_7, /users/cn/ptommaso/scratch/90/d6eb37966fe5f92588b51d6fb5079d/hla_sample_7.contigs.bwa.sorted.vcf.gz]
+[c6/59fb2f] Submitted process > alignContigs (5)
+aligned contigs [hla_sample_6, /users/cn/ptommaso/scratch/c6/59fb2f956a5a371bf8cf9db76f22dd/hla_sample_6.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_6, /users/cn/ptommaso/scratch/c6/59fb2f956a5a371bf8cf9db76f22dd/hla_sample_6.contigs.bwa.sorted.vcf.gz]
+[7d/60e340] Submitted process > alignContigs (6)
+aligned contigs [hla_sample_2, /users/cn/ptommaso/scratch/7d/60e340b723bbc65cba7c6778187d94/hla_sample_2.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_2, /users/cn/ptommaso/scratch/7d/60e340b723bbc65cba7c6778187d94/hla_sample_2.contigs.bwa.sorted.vcf.gz]
+[1a/03dccb] Submitted process > alignContigs (7)
+aligned contigs [hla_sample_3, /users/cn/ptommaso/scratch/1a/03dccb2613ddcb38e5b25b63d59546/hla_sample_3.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_3, /users/cn/ptommaso/scratch/1a/03dccb2613ddcb38e5b25b63d59546/hla_sample_3.contigs.bwa.sorted.vcf.gz]
+[ba/7e16c9] Submitted process > alignContigs (8)
+aligned contigs [hla_sample_8, /users/cn/ptommaso/scratch/ba/7e16c9fd7ac378a1d741324c25163e/hla_sample_8.contigs.bwa.sorted.bam]
+contigs vcf [hla_sample_8, /users/cn/ptommaso/scratch/ba/7e16c9fd7ac378a1d741324c25163e/hla_sample_8.contigs.bwa.sorted.vcf.gz]

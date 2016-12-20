@@ -1,0 +1,245 @@
+Nov-26 05:25:03.609 [main] DEBUG nextflow.cli.Launcher - $> ./nextflow -log sing2/.nextflow.log run nmdp-flow -revision peerj5515 -with-trace sing2/trace.txt -with-timeline sing2/timeline.html -profile sing
+Nov-26 05:25:03.731 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 0.23.0-SNAPSHOT
+Nov-26 05:25:03.843 [main] DEBUG nextflow.scm.AssetManager - Listing projects in folder: /users/cn/ptommaso/.nextflow/assets
+Nov-26 05:25:04.309 [main] DEBUG nextflow.scm.AssetManager - Git config: /users/cn/ptommaso/.nextflow/assets/nextflow-io/nmdp-flow/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/nmdp-flow.git
+Nov-26 05:25:04.363 [main] DEBUG nextflow.scm.AssetManager - Git config: /users/cn/ptommaso/.nextflow/assets/nextflow-io/nmdp-flow/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/nmdp-flow.git
+Nov-26 05:25:04.829 [main] DEBUG nextflow.scm.AssetManager - Git config: /users/cn/ptommaso/.nextflow/assets/nextflow-io/nmdp-flow/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/nmdp-flow.git
+Nov-26 05:25:04.830 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow-io/nmdp-flow` [sick_panini] - revision: 85c3ce81df [peerj5515]
+Nov-26 05:25:04.835 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /users/cn/ptommaso/.nextflow/assets/nextflow-io/nmdp-flow/nextflow.config
+Nov-26 05:25:04.836 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: nextflow.config
+Nov-26 05:25:04.837 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /users/cn/ptommaso/.nextflow/assets/nextflow-io/nmdp-flow/nextflow.config
+Nov-26 05:25:04.837 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /nfs/users2/cn/ptommaso/projects/singularity-runs/flow/nextflow.config
+Nov-26 05:25:04.908 [main] DEBUG nextflow.config.ConfigBuilder - Setting config profile: 'sing'
+Nov-26 05:25:05.004 [main] DEBUG nextflow.Session - Session uuid: e5bb3a2d-389f-42db-9967-71cbd0d767f7
+Nov-26 05:25:05.005 [main] DEBUG nextflow.Session - Run name: sick_panini
+Nov-26 05:25:05.006 [main] DEBUG nextflow.Session - Executor pool size: 16
+Nov-26 05:25:05.117 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 0.23.0-SNAPSHOT build 4107
+  Modified: 24-11-2016 13:05 UTC (14:05 CEST)
+  System: Linux 2.6.32-504.23.4.el6.x86_64
+  Runtime: Groovy 2.4.7 on Java HotSpot(TM) 64-Bit Server VM 1.8.0_40-b26
+  Encoding: UTF-8 (UTF-8)
+  Process: 14268@ant-login6.linux.crg.es [172.17.16.30]
+  CPUs: 16 - Mem: 126 GB (46.9 GB) - Swap: 64 GB (63.8 GB)
+Nov-26 05:25:05.143 [main] DEBUG nextflow.Session - Work-dir: /users/cn/ptommaso/scratch [nfs]
+Nov-26 05:25:05.143 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /users/cn/ptommaso/.nextflow/assets/nextflow-io/nmdp-flow/bin
+Nov-26 05:25:05.304 [main] DEBUG nextflow.Session - Session start invoked
+Nov-26 05:25:05.308 [main] DEBUG nextflow.processor.TaskDispatcher - Dispatcher > start
+Nov-26 05:25:05.309 [main] DEBUG nextflow.trace.TraceFileObserver - Flow starting -- trace file: /nfs/users2/cn/ptommaso/projects/singularity-runs/flow/sing2/trace.txt
+Nov-26 05:25:05.316 [main] DEBUG nextflow.script.ScriptRunner - > Script parsing
+Nov-26 05:25:05.523 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-26 05:25:05.542 [main] DEBUG nextflow.Channel - files for syntax: glob; folder: data/raw/; pattern: **_R1.fq.gz; options: null
+Nov-26 05:25:05.609 [main] DEBUG nextflow.Channel - files for syntax: glob; folder: data/raw/; pattern: **_R2.fq.gz; options: null
+Nov-26 05:25:05.663 [main] DEBUG nextflow.processor.ProcessFactory - Discovered executor class: nextflow.executor.IgExecutor
+Nov-26 05:25:05.733 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-26 05:25:05.733 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-26 05:25:05.743 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-26 05:25:05.753 [main] INFO  nextflow.executor.Executor - [warm up] executor > crg
+Nov-26 05:25:05.758 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'crg' > capacity: 100; pollInterval: 1s; dumpInterval: 5m 
+Nov-26 05:25:05.760 [main] DEBUG nextflow.processor.TaskDispatcher - Starting monitor: TaskPollingMonitor
+Nov-26 05:25:05.761 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: crg)
+Nov-26 05:25:05.763 [main] DEBUG nextflow.executor.Executor - Invoke register for executor: crg
+Nov-26 05:25:05.764 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-26 05:25:05.792 [main] DEBUG nextflow.Session - >>> barrier register (process: fastqToSsake)
+Nov-26 05:25:05.803 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > fastqToSsake -- maxForks: 16
+Nov-26 05:25:05.821 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-26 05:25:05.821 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-26 05:25:05.821 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-26 05:25:05.822 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-26 05:25:05.823 [main] DEBUG nextflow.Session - >>> barrier register (process: reformat)
+Nov-26 05:25:05.825 [Actor Thread 6] DEBUG nextflow.processor.TaskProcessor - <fastqToSsake> Poison pill arrived
+Nov-26 05:25:05.827 [Actor Thread 1] DEBUG nextflow.processor.StateObj - <fastqToSsake> State before poison: StateObj[submitted: 8; completed: 0; poisoned: false ]
+Nov-26 05:25:05.831 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > reformat -- maxForks: 16
+Nov-26 05:25:05.839 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-26 05:25:05.840 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-26 05:25:05.840 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-26 05:25:05.840 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-26 05:25:05.841 [main] DEBUG nextflow.Session - >>> barrier register (process: ssake)
+Nov-26 05:25:05.851 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > ssake -- maxForks: 16
+Nov-26 05:25:05.860 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-26 05:25:05.860 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-26 05:25:05.860 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-26 05:25:05.860 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-26 05:25:05.861 [main] DEBUG nextflow.Session - >>> barrier register (process: alignContigs)
+Nov-26 05:25:05.870 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > alignContigs -- maxForks: 16
+Nov-26 05:25:05.879 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-26 05:25:05.879 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-26 05:25:05.879 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-26 05:25:05.880 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-26 05:25:05.881 [main] DEBUG nextflow.Session - >>> barrier register (process: interleave)
+Nov-26 05:25:05.889 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > interleave -- maxForks: 16
+Nov-26 05:25:05.900 [Actor Thread 11] DEBUG nextflow.processor.TaskProcessor - <interleave> Poison pill arrived
+Nov-26 05:25:05.901 [Actor Thread 1] DEBUG nextflow.processor.StateObj - <interleave> State before poison: StateObj[submitted: 8; completed: 0; poisoned: false ]
+Nov-26 05:25:05.906 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: crg
+Nov-26 05:25:05.906 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'crg'
+Nov-26 05:25:05.906 [main] DEBUG nextflow.executor.Executor - Initializing executor: crg
+Nov-26 05:25:05.906 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'crg' > queue-stat-interval: 1m
+Nov-26 05:25:05.907 [main] DEBUG nextflow.Session - >>> barrier register (process: alignReads)
+Nov-26 05:25:05.915 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > alignReads -- maxForks: 16
+Nov-26 05:25:05.919 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Nov-26 05:25:05.919 [main] DEBUG nextflow.Session - Session await
+Nov-26 05:25:05.938 [Actor Thread 14] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (2) -- work folder: /users/cn/ptommaso/scratch/f8/4dccc622b298e08612d02ad49f97f0
+Nov-26 05:25:06.061 [Actor Thread 14] INFO  nextflow.Session - [f8/4dccc6] Submitted process > interleave (2)
+Nov-26 05:25:06.061 [Actor Thread 10] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (8) -- work folder: /users/cn/ptommaso/scratch/f7/87a982385b0aab61c95a97e4405b8a
+Nov-26 05:25:06.121 [Actor Thread 10] INFO  nextflow.Session - [f7/87a982] Submitted process > fastqToSsake (8)
+Nov-26 05:25:06.121 [Actor Thread 17] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (6) -- work folder: /users/cn/ptommaso/scratch/ea/7e795ad64b9bfd3ad9c8c0b10b5ee0
+Nov-26 05:25:06.182 [Actor Thread 17] INFO  nextflow.Session - [ea/7e795a] Submitted process > interleave (6)
+Nov-26 05:25:06.183 [Actor Thread 8] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (6) -- work folder: /users/cn/ptommaso/scratch/ea/77cb8bf48fd382d4a55a0881dc074f
+Nov-26 05:25:06.240 [Actor Thread 8] INFO  nextflow.Session - [ea/77cb8b] Submitted process > fastqToSsake (6)
+Nov-26 05:25:06.240 [Actor Thread 5] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (1) -- work folder: /users/cn/ptommaso/scratch/84/e1216345b214db05ec38b1e38751da
+Nov-26 05:25:06.300 [Actor Thread 5] INFO  nextflow.Session - [84/e12163] Submitted process > fastqToSsake (1)
+Nov-26 05:25:06.300 [Actor Thread 4] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (3) -- work folder: /users/cn/ptommaso/scratch/be/be45e5af7e18ed2bc59fdfbaa0828b
+Nov-26 05:25:06.366 [Actor Thread 4] INFO  nextflow.Session - [be/be45e5] Submitted process > fastqToSsake (3)
+Nov-26 05:25:06.366 [Actor Thread 9] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (7) -- work folder: /users/cn/ptommaso/scratch/ac/a853210fceeb49d95f305085294f73
+Nov-26 05:25:06.432 [Actor Thread 9] INFO  nextflow.Session - [ac/a85321] Submitted process > fastqToSsake (7)
+Nov-26 05:25:06.432 [Actor Thread 3] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (2) -- work folder: /users/cn/ptommaso/scratch/d1/77935cbfbbb9a43783e90df49fea03
+Nov-26 05:25:06.498 [Actor Thread 3] INFO  nextflow.Session - [d1/77935c] Submitted process > fastqToSsake (2)
+Nov-26 05:25:06.498 [Actor Thread 18] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (7) -- work folder: /users/cn/ptommaso/scratch/9c/9d702af6221d83e42c9975df59d98e
+Nov-26 05:25:06.566 [Actor Thread 18] INFO  nextflow.Session - [9c/9d702a] Submitted process > interleave (7)
+Nov-26 05:25:06.566 [Actor Thread 16] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (5) -- work folder: /users/cn/ptommaso/scratch/07/e1e5a0ed8c0450c77b6c578199f7a0
+Nov-26 05:25:06.634 [Actor Thread 16] INFO  nextflow.Session - [07/e1e5a0] Submitted process > interleave (5)
+Nov-26 05:25:06.634 [Actor Thread 13] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (1) -- work folder: /users/cn/ptommaso/scratch/18/76d031e7602c6c0e80e058e32215c7
+Nov-26 05:25:06.701 [Actor Thread 13] INFO  nextflow.Session - [18/76d031] Submitted process > interleave (1)
+Nov-26 05:25:06.701 [Actor Thread 2] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (4) -- work folder: /users/cn/ptommaso/scratch/64/cc40bf9dd18eeb6b983951920499de
+Nov-26 05:25:06.768 [Actor Thread 2] INFO  nextflow.Session - [64/cc40bf] Submitted process > fastqToSsake (4)
+Nov-26 05:25:06.768 [Actor Thread 7] DEBUG nextflow.executor.GridTaskHandler - Launching process > fastqToSsake (5) -- work folder: /users/cn/ptommaso/scratch/6e/00a9f8fb217e847d079ebc61004e73
+Nov-26 05:25:06.840 [Actor Thread 7] INFO  nextflow.Session - [6e/00a9f8] Submitted process > fastqToSsake (5)
+Nov-26 05:25:06.840 [Actor Thread 12] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (3) -- work folder: /users/cn/ptommaso/scratch/8c/9bcd7c021732e72ff86f0896446063
+Nov-26 05:25:06.842 [Actor Thread 6] DEBUG nextflow.processor.TaskProcessor - <fastqToSsake> After stop
+Nov-26 05:25:06.909 [Actor Thread 12] INFO  nextflow.Session - [8c/9bcd7c] Submitted process > interleave (3)
+Nov-26 05:25:06.909 [Actor Thread 15] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (4) -- work folder: /users/cn/ptommaso/scratch/ba/989f5330c44df9406b2460ce5dc4e1
+Nov-26 05:25:06.979 [Actor Thread 15] INFO  nextflow.Session - [ba/989f53] Submitted process > interleave (4)
+Nov-26 05:25:06.980 [Actor Thread 19] DEBUG nextflow.executor.GridTaskHandler - Launching process > interleave (8) -- work folder: /users/cn/ptommaso/scratch/44/6f8bcfb451e658f295b3807d5a9127
+Nov-26 05:25:07.060 [Actor Thread 19] INFO  nextflow.Session - [44/6f8bcf] Submitted process > interleave (8)
+Nov-26 05:25:07.063 [Actor Thread 11] DEBUG nextflow.processor.TaskProcessor - <interleave> After stop
+Nov-26 05:25:36.836 [Actor Thread 21] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (1) -- work folder: /users/cn/ptommaso/scratch/f0/ae8ac55feeeccbfc00c52d40f45f94
+Nov-26 05:25:36.901 [Actor Thread 21] INFO  nextflow.Session - [f0/ae8ac5] Submitted process > reformat (1)
+Nov-26 05:25:36.934 [Actor Thread 11] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (2) -- work folder: /users/cn/ptommaso/scratch/86/3f483cadbddcfd0df86986b5c3c441
+Nov-26 05:25:37.003 [Actor Thread 11] INFO  nextflow.Session - [86/3f483c] Submitted process > reformat (2)
+Nov-26 05:25:37.003 [Actor Thread 24] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (3) -- work folder: /users/cn/ptommaso/scratch/b0/501e7480364a170e046cfd0df07bae
+Nov-26 05:25:37.061 [Actor Thread 24] INFO  nextflow.Session - [b0/501e74] Submitted process > reformat (3)
+Nov-26 05:25:37.073 [Actor Thread 11] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (4) -- work folder: /users/cn/ptommaso/scratch/fe/7edf4f054c964d9ea529a0037c6131
+Nov-26 05:25:37.134 [Actor Thread 11] INFO  nextflow.Session - [fe/7edf4f] Submitted process > reformat (4)
+Nov-26 05:25:37.144 [Actor Thread 24] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (5) -- work folder: /users/cn/ptommaso/scratch/04/43f14b5d86569c6f33a2c805afd656
+Nov-26 05:25:37.220 [Actor Thread 24] INFO  nextflow.Session - [04/43f14b] Submitted process > reformat (5)
+Nov-26 05:25:37.227 [Actor Thread 11] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (6) -- work folder: /users/cn/ptommaso/scratch/00/d0daa76b7512e33d3ccc8ef434edfa
+Nov-26 05:25:37.287 [Actor Thread 11] INFO  nextflow.Session - [00/d0daa7] Submitted process > reformat (6)
+Nov-26 05:26:07.847 [Actor Thread 27] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (1) -- work folder: /users/cn/ptommaso/scratch/01/2885b0cfbc3c52595b991c4f228b27
+Nov-26 05:26:08.082 [Actor Thread 27] INFO  nextflow.Session - [01/2885b0] Submitted process > alignReads (1)
+Nov-26 05:26:08.082 [Actor Thread 28] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (2) -- work folder: /users/cn/ptommaso/scratch/30/f307ec8486fa567c7079d2fbdb36e0
+Nov-26 05:26:08.151 [Actor Thread 28] INFO  nextflow.Session - [30/f307ec] Submitted process > alignReads (2)
+Nov-26 05:26:37.817 [Actor Thread 30] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (3) -- work folder: /users/cn/ptommaso/scratch/2a/e4e053dae15da2fad641245a677395
+Nov-26 05:26:37.901 [Actor Thread 30] INFO  nextflow.Session - [2a/e4e053] Submitted process > alignReads (3)
+Nov-26 05:26:37.913 [Actor Thread 28] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (4) -- work folder: /users/cn/ptommaso/scratch/44/9c414a89b311ff77518553781785b0
+Nov-26 05:26:37.986 [Actor Thread 28] INFO  nextflow.Session - [44/9c414a] Submitted process > alignReads (4)
+Nov-26 05:26:37.999 [Actor Thread 30] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (5) -- work folder: /users/cn/ptommaso/scratch/7b/b5c8d9cda17c30c1e5b5cd7a401f64
+Nov-26 05:26:38.070 [Actor Thread 30] INFO  nextflow.Session - [7b/b5c8d9] Submitted process > alignReads (5)
+Nov-26 05:26:38.091 [Actor Thread 26] DEBUG nextflow.processor.TaskProcessor - <fastqToSsake> Sending poison pills and terminating process
+Nov-26 05:26:38.094 [Actor Thread 30] DEBUG nextflow.processor.TaskProcessor - <reformat> Poison pill arrived
+Nov-26 05:26:38.095 [Actor Thread 26] DEBUG nextflow.Session - <<< barrier arrive (process: fastqToSsake)
+Nov-26 05:26:38.095 [Actor Thread 29] DEBUG nextflow.processor.StateObj - <reformat> State before poison: StateObj[submitted: 8; completed: 0; poisoned: false ]
+Nov-26 05:26:38.098 [Actor Thread 28] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (7) -- work folder: /users/cn/ptommaso/scratch/2e/ff562f3e3032ff1b1e63061f089b89
+Nov-26 05:26:38.168 [Actor Thread 28] INFO  nextflow.Session - [2e/ff562f] Submitted process > reformat (7)
+Nov-26 05:26:38.168 [Actor Thread 32] DEBUG nextflow.executor.GridTaskHandler - Launching process > reformat (8) -- work folder: /users/cn/ptommaso/scratch/64/22e60c2a2ad03b6c8a264aa9828ca5
+Nov-26 05:26:38.234 [Actor Thread 32] INFO  nextflow.Session - [64/22e60c] Submitted process > reformat (8)
+Nov-26 05:26:38.236 [Actor Thread 30] DEBUG nextflow.processor.TaskProcessor - <reformat> After stop
+Nov-26 05:26:38.264 [Actor Thread 32] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (6) -- work folder: /users/cn/ptommaso/scratch/93/a04fa4e66ed3e7492d1aae8999d88b
+Nov-26 05:26:38.337 [Actor Thread 32] INFO  nextflow.Session - [93/a04fa4] Submitted process > alignReads (6)
+Nov-26 05:26:38.337 [Actor Thread 28] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (7) -- work folder: /users/cn/ptommaso/scratch/29/576a5cb4cc45483924aee29503212a
+Nov-26 05:26:38.402 [Actor Thread 28] INFO  nextflow.Session - [29/576a5c] Submitted process > alignReads (7)
+Nov-26 05:26:38.411 [Actor Thread 26] DEBUG nextflow.processor.TaskProcessor - <interleave> Sending poison pills and terminating process
+Nov-26 05:26:38.412 [Actor Thread 26] DEBUG nextflow.Session - <<< barrier arrive (process: interleave)
+Nov-26 05:26:38.412 [Actor Thread 28] DEBUG nextflow.processor.TaskProcessor - <alignReads> Poison pill arrived
+Nov-26 05:26:38.412 [Actor Thread 26] DEBUG nextflow.processor.StateObj - <alignReads> State before poison: StateObj[submitted: 8; completed: 0; poisoned: false ]
+Nov-26 05:26:38.434 [Actor Thread 32] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignReads (8) -- work folder: /users/cn/ptommaso/scratch/bf/0f5a4d795a9b105be05acb6ce54a2f
+Nov-26 05:26:38.492 [Actor Thread 32] INFO  nextflow.Session - [bf/0f5a4d] Submitted process > alignReads (8)
+Nov-26 05:26:38.494 [Actor Thread 28] DEBUG nextflow.processor.TaskProcessor - <alignReads> After stop
+Nov-26 05:27:08.822 [Actor Thread 36] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (1) -- work folder: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7
+Nov-26 05:27:08.907 [Actor Thread 36] INFO  nextflow.Session - [51/db6d97] Submitted process > ssake (1)
+Nov-26 05:27:08.926 [Actor Thread 32] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (2) -- work folder: /users/cn/ptommaso/scratch/14/e3e228596709546ac30e2a3520fb7f
+Nov-26 05:27:08.979 [Actor Thread 32] INFO  nextflow.Session - [14/e3e228] Submitted process > ssake (2)
+Nov-26 05:27:08.991 [Actor Thread 36] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (3) -- work folder: /users/cn/ptommaso/scratch/e4/956f5d6ba5c6e12663115a6ce31ffc
+Nov-26 05:27:09.062 [Actor Thread 36] INFO  nextflow.Session - [e4/956f5d] Submitted process > ssake (3)
+Nov-26 05:27:09.075 [Actor Thread 32] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (4) -- work folder: /users/cn/ptommaso/scratch/f4/aa290dfa7b8d39a3d4119eafb99d30
+Nov-26 05:27:09.149 [Actor Thread 32] INFO  nextflow.Session - [f4/aa290d] Submitted process > ssake (4)
+Nov-26 05:27:09.162 [Actor Thread 36] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (5) -- work folder: /users/cn/ptommaso/scratch/16/90e61fc3311745edb2fe255421faac
+Nov-26 05:27:09.232 [Actor Thread 36] INFO  nextflow.Session - [16/90e61f] Submitted process > ssake (5)
+Nov-26 05:27:09.244 [Actor Thread 32] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (6) -- work folder: /users/cn/ptommaso/scratch/20/4453088437ea0ea9f760f89c9460d7
+Nov-26 05:27:09.311 [Actor Thread 32] INFO  nextflow.Session - [20/445308] Submitted process > ssake (6)
+Nov-26 05:27:09.409 [Actor Thread 32] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (7) -- work folder: /users/cn/ptommaso/scratch/d9/32b98b0d96341e4d0698148e7e4309
+Nov-26 05:27:09.481 [Actor Thread 32] INFO  nextflow.Session - [d9/32b98b] Submitted process > ssake (7)
+Nov-26 05:27:09.484 [Actor Thread 35] DEBUG nextflow.processor.TaskProcessor - <reformat> Sending poison pills and terminating process
+Nov-26 05:27:09.484 [Actor Thread 35] DEBUG nextflow.Session - <<< barrier arrive (process: reformat)
+Nov-26 05:27:09.484 [Actor Thread 32] DEBUG nextflow.processor.TaskProcessor - <ssake> Poison pill arrived
+Nov-26 05:27:09.484 [Actor Thread 34] DEBUG nextflow.processor.StateObj - <ssake> State before poison: StateObj[submitted: 8; completed: 0; poisoned: false ]
+Nov-26 05:27:09.508 [Actor Thread 36] DEBUG nextflow.executor.GridTaskHandler - Launching process > ssake (8) -- work folder: /users/cn/ptommaso/scratch/36/037af29cd423794442f72fe3ba348a
+Nov-26 05:27:09.569 [Actor Thread 36] INFO  nextflow.Session - [36/037af2] Submitted process > ssake (8)
+Nov-26 05:27:09.570 [Actor Thread 32] DEBUG nextflow.processor.TaskProcessor - <ssake> After stop
+Nov-26 05:27:38.813 [Actor Thread 34] DEBUG nextflow.processor.TaskProcessor - <alignReads> Sending poison pills and terminating process
+Nov-26 05:27:38.814 [Actor Thread 34] DEBUG nextflow.Session - <<< barrier arrive (process: alignReads)
+Nov-26 05:30:06.835 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 05:35:06.888 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 05:40:06.940 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 05:45:06.982 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 05:50:07.029 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 05:55:07.068 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:00:07.116 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:05:07.158 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:10:07.206 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:15:07.252 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:20:07.296 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:25:07.340 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:30:07.380 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:35:07.426 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:40:07.468 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:45:07.511 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:50:07.555 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 06:55:07.597 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:00:07.636 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:05:07.677 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 8 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:06:12.778 [Actor Thread 40] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (1) -- work folder: /users/cn/ptommaso/scratch/1e/5feacd9874361c0adf0259834ada07
+Nov-26 07:06:12.959 [Actor Thread 40] INFO  nextflow.Session - [1e/5feacd] Submitted process > alignContigs (1)
+Nov-26 07:08:42.723 [Thread-5] DEBUG nextflow.file.FileHelper - NFS path (true): /users/cn/ptommaso/scratch
+Nov-26 07:08:42.778 [Actor Thread 44] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (2) -- work folder: /users/cn/ptommaso/scratch/95/cf870ffc4e90ef5b5438bc580b7f26
+Nov-26 07:08:42.849 [Actor Thread 44] INFO  nextflow.Session - [95/cf870f] Submitted process > alignContigs (2)
+Nov-26 07:10:07.720 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 6 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:11:12.796 [Actor Thread 48] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (3) -- work folder: /users/cn/ptommaso/scratch/c7/fc419071005e2f2226ebef82e726d4
+Nov-26 07:11:12.868 [Actor Thread 48] INFO  nextflow.Session - [c7/fc4190] Submitted process > alignContigs (3)
+Nov-26 07:15:07.768 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 5 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:20:07.811 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 5 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:21:13.921 [Actor Thread 52] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (4) -- work folder: /users/cn/ptommaso/scratch/a8/319bdb66f4da04d0c295d01ab9d50d
+Nov-26 07:21:14.035 [Actor Thread 52] INFO  nextflow.Session - [a8/319bdb] Submitted process > alignContigs (4)
+Nov-26 07:22:14.858 [Actor Thread 57] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (5) -- work folder: /users/cn/ptommaso/scratch/8c/6ea9d20e08f04999a8783e26837623
+Nov-26 07:22:14.938 [Actor Thread 57] INFO  nextflow.Session - [8c/6ea9d2] Submitted process > alignContigs (5)
+Nov-26 07:25:07.859 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 3 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:30:07.902 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 3 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:35:07.945 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 3 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:40:07.986 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 3 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:45:08.030 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 3 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:48:12.158 [Actor Thread 61] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (6) -- work folder: /users/cn/ptommaso/scratch/4f/052df5b2ee56999d9c08eb252c2d95
+Nov-26 07:48:12.274 [Actor Thread 61] INFO  nextflow.Session - [4f/052df5] Submitted process > alignContigs (6)
+Nov-26 07:50:08.080 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 2 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:55:08.132 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 2 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 07:56:44.272 [Actor Thread 65] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (7) -- work folder: /users/cn/ptommaso/scratch/1e/a7e2e81a79908d8ae2c367bf901d5a
+Nov-26 07:56:44.368 [Actor Thread 65] INFO  nextflow.Session - [1e/a7e2e8] Submitted process > alignContigs (7)
+Nov-26 08:00:08.172 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 08:05:08.213 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 08:10:08.243 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 08:15:08.278 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 08:20:08.311 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 08:25:08.353 [Thread-5] DEBUG n.processor.TaskPollingMonitor - !! executor crg > tasks to be completed: 1 -- first: TaskHandler[jobId: 13471279; id: 33; name: ssake (1); status: RUNNING; exit: -; workDir: /users/cn/ptommaso/scratch/51/db6d9735750a91a73ffd13abcfaaa7 started: 1480134459801; exited: -; ]
+Nov-26 08:25:44.376 [Actor Thread 67] DEBUG nextflow.processor.TaskProcessor - <ssake> Sending poison pills and terminating process
+Nov-26 08:25:44.377 [Actor Thread 67] DEBUG nextflow.Session - <<< barrier arrive (process: ssake)
+Nov-26 08:25:44.377 [Actor Thread 66] DEBUG nextflow.processor.TaskProcessor - <alignContigs> Poison pill arrived
+Nov-26 08:25:44.377 [Actor Thread 67] DEBUG nextflow.processor.StateObj - <alignContigs> State before poison: StateObj[submitted: 8; completed: 7; poisoned: false ]
+Nov-26 08:25:44.425 [Actor Thread 70] DEBUG nextflow.executor.GridTaskHandler - Launching process > alignContigs (8) -- work folder: /users/cn/ptommaso/scratch/b5/f46f93ae405f8965b04e90220e0981
+Nov-26 08:25:44.500 [Actor Thread 70] INFO  nextflow.Session - [b5/f46f93] Submitted process > alignContigs (8)
+Nov-26 08:25:44.501 [Actor Thread 66] DEBUG nextflow.processor.TaskProcessor - <alignContigs> After stop
+Nov-26 08:26:15.376 [Actor Thread 68] DEBUG nextflow.processor.TaskProcessor - <alignContigs> Sending poison pills and terminating process
+Nov-26 08:26:15.376 [Actor Thread 68] DEBUG nextflow.Session - <<< barrier arrive (process: alignContigs)
+Nov-26 08:26:15.377 [main] DEBUG nextflow.Session - Session await > all process finished
+Nov-26 08:26:15.381 [Thread-5] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: crg)
+Nov-26 08:26:15.381 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-26 08:26:15.430 [main] DEBUG nextflow.trace.TraceFileObserver - Flow completing -- flushing trace file
+Nov-26 08:26:15.448 [main] DEBUG nextflow.trace.TimelineObserver - Flow completing -- rendering html timeline
+Nov-26 08:26:15.605 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
